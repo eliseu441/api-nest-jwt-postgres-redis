@@ -1,0 +1,229 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-04-11T01:00:04.044Z",
+    "__export_source": "insomnia.desktop.app:v8.6.1",
+    "resources": [
+        {
+            "_id": "req_9972c215bae441d7866789ed464109ad",
+            "parentId": "wrk_99bd55ab8d564fb8b5fbe05038407536",
+            "modified": 1712797109239,
+            "created": 1712778283494,
+            "url": "http://localhost:3000/auth/login",
+            "name": "LoginToken",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\": \"john\",\n\t\"password\": \"changeme\"\n\t\t\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/8.6.1"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOjEsImlhdCI6MTcxMjc4Njg0NSwiZXhwIjoxNzEyNzg3MDI1fQ.zP2fTLNtk71rufWvHbsOIIeTUmFFMAYWhoCmys7ENsI",
+                "disabled": true
+            },
+            "metaSortKey": -1712796826413,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_99bd55ab8d564fb8b5fbe05038407536",
+            "parentId": null,
+            "modified": 1712767168142,
+            "created": 1712767168142,
+            "name": "My Collection",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_21829edbb08442d3b38a684c31fffa90",
+            "parentId": "wrk_99bd55ab8d564fb8b5fbe05038407536",
+            "modified": 1712797115498,
+            "created": 1712796822781,
+            "url": "http://localhost:3000/movie",
+            "name": "InsertMovie",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"filme\": \"duna\"\n\t\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/8.6.1"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOjEsImlhdCI6MTcxMjc5Njc5MCwiZXhwIjoxNzEyNzk2OTcwfQ.FscfCSRu6nxg9-1u_9YwMFB0tjxN14kzyNDmgZKGbkM"
+            },
+            "metaSortKey": -1712796826363,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_43b936decad54830b4ecb789714df40b",
+            "parentId": "wrk_99bd55ab8d564fb8b5fbe05038407536",
+            "modified": 1712797118793,
+            "created": 1712767177845,
+            "url": "http://localhost:3000/movie",
+            "name": "GetMovie",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"filme\": \"teste3\"\n\t\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/8.6.1"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOjEsImlhdCI6MTcxMjc5Njk3NywiZXhwIjoxNzEyNzk3MTU3fQ.rh_RFMFOUX7gLbWllIRkCEilPpPwvgxidKom67qTErE"
+            },
+            "metaSortKey": -1712796826338,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_54ef6d1484c241f2a53a64cfa1c45014",
+            "parentId": "wrk_99bd55ab8d564fb8b5fbe05038407536",
+            "modified": 1712797122473,
+            "created": 1712796824655,
+            "url": "http://localhost:3000/movie/4",
+            "name": "UpdateMovie",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"filme\": \"duna2\"\n\t\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/8.6.1"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOjEsImlhdCI6MTcxMjc5Njk3NywiZXhwIjoxNzEyNzk3MTU3fQ.rh_RFMFOUX7gLbWllIRkCEilPpPwvgxidKom67qTErE"
+            },
+            "metaSortKey": -1712796826325.5,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0b7e149daffc454b9e786425c347ea32",
+            "parentId": "wrk_99bd55ab8d564fb8b5fbe05038407536",
+            "modified": 1712797078923,
+            "created": 1712796826313,
+            "url": "http://localhost:3000/movie/4",
+            "name": "DeleteMovie",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/8.6.1"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "iJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJzdWIiOjEsImlhdCI6MTcxMjc5Njk3NywiZXhwIjoxNzEyNzk3MTU3fQ.rh_RFMFOUX7gLbWllIRkCEilPpPwvgxidKom67qTErE"
+            },
+            "metaSortKey": -1712796826313,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_66962fb8f955773da3ee71403547a81637e4fe2b",
+            "parentId": "wrk_99bd55ab8d564fb8b5fbe05038407536",
+            "modified": 1712767168147,
+            "created": 1712767168147,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1712767168147,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_66962fb8f955773da3ee71403547a81637e4fe2b",
+            "parentId": "wrk_99bd55ab8d564fb8b5fbe05038407536",
+            "modified": 1712767168150,
+            "created": 1712767168150,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
