@@ -13,7 +13,7 @@ import { UsersModule } from './users/users.module';
       host: 'host.docker.internal',
       port: 5432,
       username: 'postgres',
-      password: 'Cesar10044',
+      password: '123',
       database: 'MKS_DB',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
