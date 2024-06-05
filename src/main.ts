@@ -27,7 +27,6 @@ async function bootstrap() {
       store: new RedisStore({ client: redisClient }),  
     }), 
   ); 
-  // 设置passport，并启用session 
   app.use(passport.initialize()); 
   app.use(passport.session()); 
 
